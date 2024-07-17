@@ -47,8 +47,6 @@ Specifically, it uses Python scripts for the ETL process and Apache Airflow for 
 * `black` is used for formatting Python scripts.
 
 ##### Example picture: Airflow DAG
-![image](https://github.com/user-attachments/assets/97f26e97-bc59-4477-9d3d-0b7004235ecf)
-
 ![aa6](https://github.com/user-attachments/assets/570bd127-b364-41bf-b0aa-d7139a3defce)
 
 
