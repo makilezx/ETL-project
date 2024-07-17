@@ -13,7 +13,8 @@ This repository contains the code that handles end-to-end data engineering solut
 Specifically, it uses Python scripts for the ETL process and Apache Airflow for orchestration, while the Postgres database acts as a warehouse where pre-processed data is ingested. Moreover, the whole pipeline is _dockerized_ with the aim of providing a modular, isolated environment. Finally, Metabase handles visualizations and dashboards. 
 
 ## ETL diagram
-![Untitled-2024-06-05-2048](https://github.com/user-attachments/assets/e3453efe-fd58-4d7f-9c81-460730bf2aa1)
+![aa1](https://github.com/user-attachments/assets/803d2ccd-c008-47ef-9d4a-22e23590d428)
+
 
 ## Project structure
 
@@ -45,6 +46,10 @@ Specifically, it uses Python scripts for the ETL process and Apache Airflow for 
 * Custom logging is implemented through the pipeline using `logging` library. Since the pipeline was initially developed on the local machine, it proved extremely useful.
 * `black` is used for formatting Python scripts.
 
+##### Example picture: Airflow DAG
+![image](https://github.com/user-attachments/assets/bc4a64dd-1264-472a-9027-cb3ec1a99324)
+
+
 #### Data format(s)
 * The goal was not only to ensure a smooth processing flow, where each stage in the pipeline depends on files produced in the previous stage, but also to maintain the raw, staging, and source files in suitable formats for storage purposes.
     * Specifically, the first stage (extraction) relies on retrieving data from various Excel sheets/files and converting it into a usable format for subsequent processing. Extracted data is put in a .json file and this decision is made due to the mixed and unspecified data types in raw data.
@@ -54,5 +59,4 @@ Specifically, it uses Python scripts for the ETL process and Apache Airflow for 
 * Metabase is running in a separate container. SQL queries used for analytics purposes as well as for dashboard creation can be found in `sql_scripts`
 
 ##### Example picture: part of the dashboard created with SQL and Metabase
-
-![346592708-d9e0957b-9b7b-491f-964a-59d1dbcb3b03](https://github.com/user-attachments/assets/d8f9fcc0-679e-4526-83fc-69025320dfca)
+![aa2](https://github.com/user-attachments/assets/a9385ec6-c576-48ba-9396-6299e50f557d)
