@@ -46,7 +46,7 @@ Specifically, it uses Python scripts for the ETL process and Apache Airflow for 
 * Custom logging is implemented through the pipeline using `logging` library. Since the pipeline was initially developed on the local machine, it proved extremely useful.
 * `black` is used for formatting Python scripts.
 
-##### Example picture: Airflow DAG
+##### Airflow DAG
 ![aa6](https://github.com/user-attachments/assets/570bd127-b364-41bf-b0aa-d7139a3defce)
 
 
@@ -59,5 +59,5 @@ Specifically, it uses Python scripts for the ETL process and Apache Airflow for 
 #### Visualization
 * Metabase is running in a separate container. SQL queries used for analytics purposes as well as for dashboard creation can be found in `sql_scripts`
 
-##### Example picture: part of the dashboard created with SQL and Metabase
+##### Part of the dashboard created with SQL and Metabase
 ![aa2](https://github.com/user-attachments/assets/a9385ec6-c576-48ba-9396-6299e50f557d)
